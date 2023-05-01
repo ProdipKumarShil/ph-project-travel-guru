@@ -6,6 +6,8 @@ import {
 import Home from '../Layout/Home';
 import Account from '../Layout/Account';
 import Destination from '../Layout/Destination';
+import Login from '../Components/Login/Login';
+import Register from '../Components/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,17 @@ const router = createBrowserRouter([
   },
   {
     path: 'account',
-    element: <Account></Account>
+    element: <Account></Account>,
+    children: [
+      {
+        path: '/account',
+        element: <Login></Login>
+      },
+      {
+        path: '/account/register',
+        element: <Register></Register>
+      }
+    ]
   },
   {
     path: 'destination',

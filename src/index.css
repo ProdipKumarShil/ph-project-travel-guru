@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply bg-[#F9A51A] py-2 rounded-md font-medium text-base
+}
+.form-container{
+  @apply py-10 px-14 border
+}
