@@ -2,13 +2,13 @@ import React from 'react';
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const HomeNav = () => {
   return (
     <div>
-      <nav class="bg-white">
+      <nav class="">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to='/' class="flex items-center">
-            <img src={logo} class="w-28 mr-6" alt="Flowbite Logo" />
+            <img src={logo} class="w-28  mr-6 filter invert" alt="Flowbite Logo" />
           </Link>
 
           <div className='mr-auto w-80'>
@@ -26,23 +26,23 @@ const Navbar = () => {
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent  md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class=" font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent  md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Home</Link>
+                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-300 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Home</Link>
               </li>
               <li>
-                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Destination</Link>
+                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-300 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Destination</Link>
               </li>
               <li>
-                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Blog</Link>
+                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-300 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Blog</Link>
               </li>
               <li>
-                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Contract</Link>
+                <Link href="#" class="block py-2 pl-3 pr-4 text-gray-300 rounded md:bg-transparent  md:p-0 dark:text-white " aria-current="page">Contract</Link>
               </li>
               <li>
                 <Link to='/account' class="btn px-7 " aria-current="page">Login</Link>
               </li>
-              
+
             </ul>
           </div>
         </div>
@@ -52,4 +52,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HomeNav;
